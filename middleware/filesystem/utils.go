@@ -21,7 +21,8 @@ func getFileExtension(p string) string {
 	return p[n:]
 }
 
-func dirListHtml(c *fiber.Ctx, f http.File) error {
+// Write file to c *fiber.Ctx in HTML format
+func dirListInHTML(c *fiber.Ctx, f http.File) error {
 	fileinfos, err := f.Readdir(-1)
 	if err != nil {
 		return fmt.Errorf("failed to read dir: %w", err)
@@ -61,6 +62,30 @@ func dirListHtml(c *fiber.Ctx, f http.File) error {
 	_, _ = fmt.Fprint(c, "</ul></body></html>")
 
 	c.Type("html")
+
+	return nil
+}
+
+// Write file to c *fiber.Ctx in JSON format
+func dirListInJSON(c *fiber.Ctx, f http.File) error {
+	fileinfos, err := f.Readdir(-1)
+	if err != nil {
+		return fmt.Errorf("failed to read dir: %w", err)
+	}
+
+	fm := make(map[string]os.FileInfo, len(fileinfos))
+	filenames := make([]string, 0, len(fileinfos))
+	for _, fi := range fileinfos {
+		name := fi.Name()
+		fm[name] = fi
+		filenames = append(filenames, name)
+	}
+
+	sort.Strings(filenames)
+
+	c.JSON(fiber.Map{
+		"files": filenames,
+	})
 
 	return nil
 }
