@@ -183,7 +183,7 @@ func New(config ...Config) fiber.Handler {
 				if cfg.BrowseJson {
 					return dirListJson(c, file)
 				}
-				return dirList(c, file)
+				return dirListHtml(c, file)
 			}
 			return fiber.ErrForbidden
 		}
