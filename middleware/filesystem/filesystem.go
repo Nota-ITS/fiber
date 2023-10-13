@@ -38,6 +38,11 @@ type Config struct {
 	// Optional. Default: false
 	Browse bool `json:"browse"`
 
+	// Enable directory browsing with Json ResponseType.
+	//
+	// Optional. Default: false
+	BrowseJson bool `json:"browse_json"`
+
 	// Index file for serving a directory.
 	//
 	// Optional. Default: "index.html"
@@ -67,6 +72,7 @@ var ConfigDefault = Config{
 	Root:               nil,
 	PathPrefix:         "",
 	Browse:             false,
+	BrowseJson:         false,
 	Index:              "/index.html",
 	MaxAge:             0,
 	ContentTypeCharset: "",
@@ -174,7 +180,10 @@ func New(config ...Config) fiber.Handler {
 		// Browse directory if no index found and browsing is enabled
 		if stat.IsDir() {
 			if cfg.Browse {
-				return dirList(c, file)
+				if cfg.BrowseJson {
+					return dirListInJSON(c, file)
+				}
+				return dirListInHTML(c, file)
 			}
 			return fiber.ErrForbidden
 		}
