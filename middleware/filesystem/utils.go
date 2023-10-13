@@ -21,7 +21,7 @@ func getFileExtension(p string) string {
 	return p[n:]
 }
 
-// Write file to c *fiber.Ctx in HTML format
+// Write files to c *fiber.Ctx in HTML format
 func dirListInHTML(c *fiber.Ctx, f http.File) error {
 	fileinfos, err := f.Readdir(-1)
 	if err != nil {
@@ -66,7 +66,28 @@ func dirListInHTML(c *fiber.Ctx, f http.File) error {
 	return nil
 }
 
-// Write file to c *fiber.Ctx in JSON format
+// Write files to c *fiber.Ctx in JSON format
+// The JSON format has the following structure:
+// {
+//   "basePathEscaped": "/dir1",
+//   "parentPathEscaped": "/",
+//   "files": [
+//     {
+//       "name": "file1.txt",
+//		 "pathEscaped": "/file1.txt",
+//       "size": 4,
+//       "modTime": "2020-12-31T23:59:59.999999999Z",
+//       "class": "file"
+//     },
+//     {
+//       "name": "dir1",
+//		 "pathEscaped": "/dir1",
+//       "size": 0,
+//       "modTime": "2020-12-31T23:59:59.999999999Z",
+//       "class": "dir"
+//     }
+//   ]
+// }
 func dirListInJSON(c *fiber.Ctx, f http.File) error {
 	fileinfos, err := f.Readdir(-1)
 	if err != nil {
@@ -81,11 +102,29 @@ func dirListInJSON(c *fiber.Ctx, f http.File) error {
 		filenames = append(filenames, name)
 	}
 
-	sort.Strings(filenames)
+	basePathEscaped := html.EscapeString(c.Path())
+	parentPathEscaped := html.EscapeString(utils.TrimRight(c.Path(), '/') + "/..")
 
-	c.JSON(fiber.Map{
-		"files": filenames,
+	files := make([]map[string]interface{}, 0, len(fileinfos))
+	for _, name := range filenames {
+		pathEscaped := html.EscapeString(path.Join(c.Path() + "/" + name))
+		fi := fm[name]
+		className := "dir"
+		if !fi.IsDir() {
+			className = "file"
+		}
+		files = append(files, map[string]interface{}{
+			"name":        name,
+			"pathEscaped": pathEscaped,
+			"size":        fi.Size(),
+			"modTime":     fi.ModTime(),
+			"class":       className,
+		})
+	}
+
+	return c.JSON(map[string]interface{}{
+		"basePathEscaped":   basePathEscaped,
+		"parentPathEscaped": parentPathEscaped,
+		"files":             files,
 	})
-
-	return nil
 }

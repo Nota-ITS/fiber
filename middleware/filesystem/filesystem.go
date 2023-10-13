@@ -181,9 +181,9 @@ func New(config ...Config) fiber.Handler {
 		if stat.IsDir() {
 			if cfg.Browse {
 				if cfg.BrowseJson {
-					return dirListJson(c, file)
+					return dirListInJSON(c, file)
 				}
-				return dirListHtml(c, file)
+				return dirListInHTML(c, file)
 			}
 			return fiber.ErrForbidden
 		}
