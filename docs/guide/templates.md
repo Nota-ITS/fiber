@@ -68,7 +68,7 @@ package main
 
 import (
     "log"
-    "github.com/gofiber/fiber/v2"
+    "github.com/Nota-ITS/fiber"
     "github.com/gofiber/template/html/v2"
 )
 

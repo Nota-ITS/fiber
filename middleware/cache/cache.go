@@ -9,8 +9,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/Nota-ITS/fiber"
+	"github.com/Nota-ITS/fiber/utils"
 )
 
 // timestampUpdatePeriod is the period which is used to check the cache expiration.

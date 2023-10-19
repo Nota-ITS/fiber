@@ -3,7 +3,7 @@ id: pprof
 title: Pprof
 ---
 
-Pprof middleware for [Fiber](https://github.com/gofiber/fiber) that serves via its HTTP server runtime profiling data in the format expected by the pprof visualization tool. The package is typically only imported for the side effect of registering its HTTP handlers. The handled paths all begin with /debug/pprof/.
+Pprof middleware for [Fiber](https://github.com/Nota-ITS/fiber) that serves via its HTTP server runtime profiling data in the format expected by the pprof visualization tool. The package is typically only imported for the side effect of registering its HTTP handlers. The handled paths all begin with /debug/pprof/.
 
 ## Signatures
 
@@ -17,8 +17,8 @@ Import the middleware package that is part of the Fiber web framework
 
 ```go
 import (
-  "github.com/gofiber/fiber/v2"
-  "github.com/gofiber/fiber/v2/middleware/pprof"
+  "github.com/Nota-ITS/fiber"
+  "github.com/Nota-ITS/fiber/middleware/pprof"
 )
 ```
 

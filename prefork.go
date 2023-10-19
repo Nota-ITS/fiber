@@ -12,7 +12,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gofiber/fiber/v2/log"
+	"github.com/Nota-ITS/fiber/log"
 	"github.com/valyala/fasthttp/reuseport"
 )
 

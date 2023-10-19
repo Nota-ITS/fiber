@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/Nota-ITS/fiber/utils"
 )
 
 const work = "work"

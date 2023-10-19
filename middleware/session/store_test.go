@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/Nota-ITS/fiber"
+	"github.com/Nota-ITS/fiber/utils"
 
 	"github.com/valyala/fasthttp"
 )
@@ -63,7 +63,7 @@ func TestStore_getSessionID(t *testing.T) {
 }
 
 // go test -run TestStore_Get
-// Regression: https://github.com/gofiber/fiber/issues/1408
+// Regression: https://github.com/Nota-ITS/fiber/issues/1408
 func TestStore_Get(t *testing.T) {
 	t.Parallel()
 	unexpectedID := "test-session-id"

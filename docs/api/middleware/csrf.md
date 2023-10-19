@@ -3,7 +3,7 @@ id: csrf
 title: CSRF
 ---
 
-CSRF middleware for [Fiber](https://github.com/gofiber/fiber) that provides [Cross-site request forgery](https://en.wikipedia.org/wiki/Cross-site_request_forgery) protection by passing a csrf token via cookies. This cookie value will be used to compare against the client csrf token on requests, other than those defined as "safe" by RFC7231 \(GET, HEAD, OPTIONS, or TRACE\). When the csrf token is invalid, this middleware will return the `fiber.ErrForbidden` error. 
+CSRF middleware for [Fiber](https://github.com/Nota-ITS/fiber) that provides [Cross-site request forgery](https://en.wikipedia.org/wiki/Cross-site_request_forgery) protection by passing a csrf token via cookies. This cookie value will be used to compare against the client csrf token on requests, other than those defined as "safe" by RFC7231 \(GET, HEAD, OPTIONS, or TRACE\). When the csrf token is invalid, this middleware will return the `fiber.ErrForbidden` error. 
 
 CSRF Tokens are generated on GET requests. You can retrieve the CSRF token with `c.Locals(contextKey)`, where `contextKey` is the string you set in the config (see Custom Config below).
 
@@ -25,8 +25,8 @@ Import the middleware package that is part of the Fiber web framework
 
 ```go
 import (
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/csrf"
+    "github.com/Nota-ITS/fiber"
+    "github.com/Nota-ITS/fiber/middleware/csrf"
 )
 ```
 

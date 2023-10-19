@@ -3,7 +3,7 @@ id: limiter
 title: Limiter
 ---
 
-Limiter middleware for [Fiber](https://github.com/gofiber/fiber) that is used to limit repeat requests to public APIs and/or endpoints such as password reset. It is also useful for API clients, web crawling, or other tasks that need to be throttled.
+Limiter middleware for [Fiber](https://github.com/Nota-ITS/fiber) that is used to limit repeat requests to public APIs and/or endpoints such as password reset. It is also useful for API clients, web crawling, or other tasks that need to be throttled.
 
 :::note
 This middleware uses our [Storage](https://github.com/gofiber/storage) package to support various databases through a single interface. The default configuration for this middleware saves data to memory, see the examples below for other databases.
@@ -25,8 +25,8 @@ Import the middleware package that is part of the Fiber web framework
 
 ```go
 import (
-  "github.com/gofiber/fiber/v2"
-  "github.com/gofiber/fiber/v2/middleware/limiter"
+  "github.com/Nota-ITS/fiber"
+  "github.com/Nota-ITS/fiber/middleware/limiter"
 )
 ```
 

@@ -11,7 +11,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/gofiber/fiber/v2/internal/wmi"
+	"github.com/Nota-ITS/fiber/internal/wmi"
 	"golang.org/x/sys/windows"
 )
 

@@ -17,7 +17,7 @@ First of all, [download](https://go.dev/dl/) and install Go. `1.17` or higher is
 Installation is done using the [`go get`](https://pkg.go.dev/cmd/go/#hdr-Add_dependencies_to_current_module_and_install_them) command:
 
 ```bash
-go get github.com/gofiber/fiber/v2
+go get github.com/Nota-ITS/fiber
 ```
 
 ### Zero Allocation
@@ -51,7 +51,7 @@ func handler(c *fiber.Ctx) error {
 }
 ```
 
-We created a custom `CopyString` function that does the above and is available under [gofiber/utils](https://github.com/gofiber/fiber/tree/master/utils).
+We created a custom `CopyString` function that does the above and is available under [gofiber/utils](https://github.com/Nota-ITS/fiber/tree/master/utils).
 
 ```go
 app.Get("/:foo", func(c *fiber.Ctx) error {
@@ -70,7 +70,7 @@ app := fiber.New(fiber.Config{
 })
 ```
 
-For more information, please check [**\#426**](https://github.com/gofiber/fiber/issues/426) and [**\#185**](https://github.com/gofiber/fiber/issues/185).
+For more information, please check [**\#426**](https://github.com/Nota-ITS/fiber/issues/426) and [**\#185**](https://github.com/Nota-ITS/fiber/issues/185).
 
 ### Hello, World!
 
@@ -79,7 +79,7 @@ Embedded below is essentially the most straightforward **Fiber** app you can cre
 ```go
 package main
 
-import "github.com/gofiber/fiber/v2"
+import "github.com/Nota-ITS/fiber"
 
 func main() {
 	app := fiber.New()

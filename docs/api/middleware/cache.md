@@ -3,7 +3,7 @@ id: cache
 title: Cache
 ---
 
-Cache middleware for [Fiber](https://github.com/gofiber/fiber) designed to intercept responses and cache them. This middleware will cache the `Body`, `Content-Type` and `StatusCode` using the `c.Path()` as unique identifier. Special thanks to [@codemicro](https://github.com/codemicro/fiber-cache) for creating this middleware for Fiber core!
+Cache middleware for [Fiber](https://github.com/Nota-ITS/fiber) designed to intercept responses and cache them. This middleware will cache the `Body`, `Content-Type` and `StatusCode` using the `c.Path()` as unique identifier. Special thanks to [@codemicro](https://github.com/codemicro/fiber-cache) for creating this middleware for Fiber core!
 
 Request Directives<br />
 `Cache-Control: no-cache` will return the up-to-date response but still caches it. You will always get a `miss` cache status.<br />
@@ -21,8 +21,8 @@ Import the middleware package that is part of the Fiber web framework
 
 ```go
 import (
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/cache"
+    "github.com/Nota-ITS/fiber"
+    "github.com/Nota-ITS/fiber/middleware/cache"
 )
 ```
 

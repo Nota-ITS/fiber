@@ -1,16 +1,16 @@
-module github.com/gofiber/fiber/v2
+module github.com/Nota-ITS/fiber
 
 go 1.20
 
 require (
-	github.com/google/uuid v1.3.0
+	github.com/google/uuid v1.3.1
 	github.com/mattn/go-colorable v0.1.13
-	github.com/mattn/go-isatty v0.0.19
-	github.com/mattn/go-runewidth v0.0.14
+	github.com/mattn/go-isatty v0.0.20
+	github.com/mattn/go-runewidth v0.0.15
 	github.com/tinylib/msgp v1.1.8
 	github.com/valyala/bytebufferpool v1.0.0
-	github.com/valyala/fasthttp v1.48.0
-	golang.org/x/sys v0.10.0
+	github.com/valyala/fasthttp v1.50.0
+	golang.org/x/sys v0.13.0
 )
 
 require (

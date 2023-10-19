@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/internal/storage/memory"
+	"github.com/Nota-ITS/fiber"
+	"github.com/Nota-ITS/fiber/internal/storage/memory"
 )
 
 var ErrInvalidIdempotencyKey = errors.New("invalid idempotency key")

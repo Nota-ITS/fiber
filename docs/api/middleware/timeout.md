@@ -3,7 +3,7 @@ id: timeout
 title: Timeout
 ---
 
-There exist two distinct implementations of timeout middleware [Fiber](https://github.com/gofiber/fiber).
+There exist two distinct implementations of timeout middleware [Fiber](https://github.com/Nota-ITS/fiber).
 
 **New**
 
@@ -35,8 +35,8 @@ Import the middleware package that is part of the Fiber web framework
 
 ```go
 import (
-  "github.com/gofiber/fiber/v2"
-  "github.com/gofiber/fiber/v2/middleware/timeout"
+  "github.com/Nota-ITS/fiber"
+  "github.com/Nota-ITS/fiber/middleware/timeout"
 )
 ```
 

@@ -37,8 +37,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gofiber/fiber/v2/internal/go-ole"
-	"github.com/gofiber/fiber/v2/internal/go-ole/oleutil"
+	"github.com/Nota-ITS/fiber/internal/go-ole"
+	"github.com/Nota-ITS/fiber/internal/go-ole/oleutil"
 )
 
 var l = log.New(os.Stdout, "", log.LstdFlags)

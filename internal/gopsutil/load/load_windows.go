@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gofiber/fiber/v2/internal/gopsutil/common"
+	"github.com/Nota-ITS/fiber/internal/gopsutil/common"
 )
 
 var (

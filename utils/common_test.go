@@ -1,5 +1,5 @@
 // ⚡️ Fiber is an Express inspired web framework written in Go with ☕️
-// 🤖 Github Repository: https://github.com/gofiber/fiber
+// 🤖 Github Repository: https://github.com/Nota-ITS/fiber
 // 📌 API Documentation: https://docs.gofiber.io
 
 package utils
@@ -12,9 +12,9 @@ import (
 
 func Test_FunctionName(t *testing.T) {
 	t.Parallel()
-	AssertEqual(t, "github.com/gofiber/fiber/v2/utils.Test_UUID", FunctionName(Test_UUID))
+	AssertEqual(t, "github.com/Nota-ITS/fiber/utils.Test_UUID", FunctionName(Test_UUID))
 
-	AssertEqual(t, "github.com/gofiber/fiber/v2/utils.Test_FunctionName.func1", FunctionName(func() {}))
+	AssertEqual(t, "github.com/Nota-ITS/fiber/utils.Test_FunctionName.func1", FunctionName(func() {}))
 
 	dummyint := 20
 	AssertEqual(t, "int", FunctionName(dummyint))

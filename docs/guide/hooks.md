@@ -59,7 +59,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/Nota-ITS/fiber"
 )
 
 func main() {
@@ -186,7 +186,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/Nota-ITS/fiber"
 )
 
 func main() {

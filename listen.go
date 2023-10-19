@@ -1,5 +1,5 @@
 // ⚡️ Fiber is an Express inspired web framework written in Go with ☕️
-// 🤖 Github Repository: https://github.com/gofiber/fiber
+// 🤖 Github Repository: https://github.com/Nota-ITS/fiber
 // 📌 API Documentation: https://docs.gofiber.io
 
 package fiber
@@ -19,7 +19,7 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/gofiber/fiber/v2/log"
+	"github.com/Nota-ITS/fiber/log"
 	"github.com/mattn/go-colorable"
 	"github.com/mattn/go-isatty"
 	"github.com/mattn/go-runewidth"
@@ -455,8 +455,8 @@ func (app *App) startupMessage(addr string, isTLS bool, pids string) { //nolint:
 // printRoutesMessage print all routes with method, path, name and handlers
 // in a format of table, like this:
 // method | path | name      | handlers
-// GET    | /    | routeName | github.com/gofiber/fiber/v2.emptyHandler
-// HEAD   | /    |           | github.com/gofiber/fiber/v2.emptyHandler
+// GET    | /    | routeName | github.com/Nota-ITS/fiber.emptyHandler
+// HEAD   | /    |           | github.com/Nota-ITS/fiber.emptyHandler
 func (app *App) printRoutesMessage() {
 	// ignore child processes
 	if IsChild() {

@@ -158,7 +158,7 @@ func isEmptyFields(fields []fieldWithPrefix, src map[string][]string) bool {
 			}
 			for key := range src {
 				// issue references:
-				// https://github.com/gofiber/fiber/issues/1414
+				// https://github.com/Nota-ITS/fiber/issues/1414
 				// https://github.com/gorilla/schema/issues/176
 				nested := strings.IndexByte(key, '.') != -1
 

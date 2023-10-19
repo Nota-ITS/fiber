@@ -35,8 +35,8 @@ package main
 import (
     "log"
 
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/recover"
+    "github.com/Nota-ITS/fiber"
+    "github.com/Nota-ITS/fiber/middleware/recover"
 )
 
 func main() {
@@ -66,7 +66,7 @@ app.Get("/", func(c *fiber.Ctx) error {
 
 ## Default Error Handler
 
-Fiber provides an error handler by default. For a standard error, the response is sent as **500 Internal Server Error**. If the error is of type [fiber.Error](https://godoc.org/github.com/gofiber/fiber#Error), the response is sent with the provided status code and message.
+Fiber provides an error handler by default. For a standard error, the response is sent as **500 Internal Server Error**. If the error is of type [fiber.Error](https://godoc.org/github.com/Nota-ITS/fiber#Error), the response is sent with the provided status code and message.
 
 ```go title="Example"
 // Default error handler

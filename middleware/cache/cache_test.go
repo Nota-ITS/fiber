@@ -13,10 +13,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/internal/storage/memory"
-	"github.com/gofiber/fiber/v2/middleware/etag"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/Nota-ITS/fiber"
+	"github.com/Nota-ITS/fiber/internal/storage/memory"
+	"github.com/Nota-ITS/fiber/middleware/etag"
+	"github.com/Nota-ITS/fiber/utils"
 
 	"github.com/valyala/fasthttp"
 )

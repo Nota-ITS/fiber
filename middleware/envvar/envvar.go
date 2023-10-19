@@ -4,7 +4,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/Nota-ITS/fiber"
 )
 
 // Config defines the config for middleware.

@@ -3,7 +3,7 @@ id: monitor
 title: Monitor
 ---
 
-Monitor middleware for [Fiber](https://github.com/gofiber/fiber) that reports server metrics, inspired by [express-status-monitor](https://github.com/RafalWilinski/express-status-monitor)
+Monitor middleware for [Fiber](https://github.com/Nota-ITS/fiber) that reports server metrics, inspired by [express-status-monitor](https://github.com/RafalWilinski/express-status-monitor)
 
 :::caution
 
@@ -23,8 +23,8 @@ Import the middleware package that is part of the Fiber web framework
 
 ```go
 import (
-  "github.com/gofiber/fiber/v2"
-  "github.com/gofiber/fiber/v2/middleware/monitor"
+  "github.com/Nota-ITS/fiber"
+  "github.com/Nota-ITS/fiber/middleware/monitor"
 )
 ```
 

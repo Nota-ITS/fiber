@@ -3,7 +3,7 @@ id: earlydata
 title: EarlyData
 ---
 
-The Early Data middleware for [Fiber](https://github.com/gofiber/fiber) adds support for TLS 1.3's early data ("0-RTT") feature.
+The Early Data middleware for [Fiber](https://github.com/Nota-ITS/fiber) adds support for TLS 1.3's early data ("0-RTT") feature.
 Citing [RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446#section-2-3), when a client and server share a PSK, TLS 1.3 allows clients to send data on the first flight ("early data") to speed up the request, effectively reducing the regular 1-RTT request to a 0-RTT request.
 
 Make sure to enable fiber's `EnableTrustedProxyCheck` config option before using this middleware in order to not trust bogus HTTP request headers of the client.
@@ -28,8 +28,8 @@ Import the middleware package that is part of the Fiber web framework
 
 ```go
 import (
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/earlydata"
+	"github.com/Nota-ITS/fiber"
+	"github.com/Nota-ITS/fiber/middleware/earlydata"
 )
 ```
 

@@ -12,9 +12,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gofiber/fiber/v2/internal/gopsutil/common"
-	cpu "github.com/gofiber/fiber/v2/internal/gopsutil/cpu"
-	net "github.com/gofiber/fiber/v2/internal/gopsutil/net"
+	"github.com/Nota-ITS/fiber/internal/gopsutil/common"
+	cpu "github.com/Nota-ITS/fiber/internal/gopsutil/cpu"
+	net "github.com/Nota-ITS/fiber/internal/gopsutil/net"
 	"golang.org/x/sys/unix"
 )
 
