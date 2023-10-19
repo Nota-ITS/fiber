@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"errors"
 
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/Nota-ITS/fiber/utils"
 )
 
 // buildLogFuncChain analyzes the template and creates slices with the functions for execution and

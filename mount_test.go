@@ -12,8 +12,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/gofiber/fiber/v2/internal/template/html"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/Nota-ITS/fiber/internal/template/html"
+	"github.com/Nota-ITS/fiber/utils"
 )
 
 // go test -run Test_App_Mount

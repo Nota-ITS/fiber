@@ -1,7 +1,7 @@
 package compress
 
 import (
-	"github.com/gofiber/fiber/v2"
+	"github.com/Nota-ITS/fiber"
 
 	"github.com/valyala/fasthttp"
 )

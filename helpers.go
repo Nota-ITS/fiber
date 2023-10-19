@@ -18,8 +18,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/gofiber/fiber/v2/log"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/Nota-ITS/fiber/log"
+	"github.com/Nota-ITS/fiber/utils"
 
 	"github.com/valyala/bytebufferpool"
 	"github.com/valyala/fasthttp"

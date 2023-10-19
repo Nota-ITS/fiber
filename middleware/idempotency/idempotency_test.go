@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/idempotency"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/Nota-ITS/fiber"
+	"github.com/Nota-ITS/fiber/middleware/idempotency"
+	"github.com/Nota-ITS/fiber/utils"
 
 	"github.com/valyala/fasthttp"
 )

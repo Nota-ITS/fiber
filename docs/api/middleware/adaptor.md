@@ -27,8 +27,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/adaptor"
+	"github.com/Nota-ITS/fiber"
+	"github.com/Nota-ITS/fiber/middleware/adaptor"
 )
 
 func main() {
@@ -62,8 +62,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/adaptor"
+	"github.com/Nota-ITS/fiber"
+	"github.com/Nota-ITS/fiber/middleware/adaptor"
 )
 
 func main() {
@@ -92,8 +92,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/adaptor"
+	"github.com/Nota-ITS/fiber"
+	"github.com/Nota-ITS/fiber/middleware/adaptor"
 )
 
 func main() {
@@ -119,8 +119,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/adaptor"
+	"github.com/Nota-ITS/fiber"
+	"github.com/Nota-ITS/fiber/middleware/adaptor"
 )
 
 func main() {
@@ -144,8 +144,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/adaptor"
+	"github.com/Nota-ITS/fiber"
+	"github.com/Nota-ITS/fiber/middleware/adaptor"
 )
 
 func main() {

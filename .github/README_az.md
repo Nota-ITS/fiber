@@ -67,10 +67,10 @@
     <img height="20px" src="https://img.shields.io/badge/UK-flag.svg?color=555555&style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU1LjIgMzguNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTUuMiAzOC40IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWwoJLnN0MHtmaWxsOiNGRkQ1MDA7fQoJLnN0MXtmaWxsOiMwMDVCQkI7fQpdXT48L3N0eWxlPjxnPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0zLjAzLDBoNDkuMTNjMS42NywwLDMuMDMsMS4zNiwzLjAzLDMuMDN2MzIuMzNjMCwxLjY3LTEuMzcsMy4wMy0zLjAzLDMuMDNIMy4wM0MxLjM3LDM4LjQsMCwzNy4wNCwwLDM1LjM3IFYzLjAzQzAsMS4zNiwxLjM3LDAsMy4wMywwTDMuMDMsMHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMCwxOS4yaDU1LjJ2MTYuMTdjMCwxLjY3LTEuMzcsMy4wMy0zLjAzLDMuMDNIMy4wM0MxLjM3LDM4LjQsMCwzNy4wNCwwLDM1LjM3VjE5LjJMMCwxOS4yeiIvPjwvZz48L3N2Zz4=">
   </a>
   <br>
-  <a href="https://pkg.go.dev/github.com/gofiber/fiber/v2#pkg-overview">
+  <a href="https://pkg.go.dev/github.com/Nota-ITS/fiber#pkg-overview">
     <img src="https://img.shields.io/badge/%F0%9F%93%9A%20godoc-pkg-00ACD7.svg?color=00ACD7&style=flat-square">
   </a>
-  <a href="https://goreportcard.com/report/github.com/gofiber/fiber/v2">
+  <a href="https://goreportcard.com/report/github.com/Nota-ITS/fiber">
     <img src="https://img.shields.io/badge/%F0%9F%93%9D%20goreport-A%2B-75C46B?style=flat-square">
   </a>
   <a href="https://gocover.io/github.com/gofiber/fiber">
@@ -99,7 +99,7 @@
 ```go
 package main
 
-import "github.com/gofiber/fiber/v2"
+import "github.com/Nota-ITS/fiber"
 
 func main() {
     app := fiber.New()
@@ -129,7 +129,7 @@ Go dilinin `1.17` və ya daha yuxarı versiyanın [yükləndiyindən](https://go
 Bir qovluq yaratdıqdan sonra, `go mod init github.com/your/repo` komandasını eyni qovluğun daxilində işə salaraq layihənizi başladın ([go modulları haqqında əlavə bilgilər](https://go.dev/blog/using-go-modules)). Növbəti addım olaraq Fiber-i [`go get`](https://pkg.go.dev/cmd/go/#hdr-Add_dependencies_to_current_module_and_install_them) komandasını işlədərək yükləyin:
 
 ```bash
-go get -u github.com/gofiber/fiber/v2
+go get -u github.com/Nota-ITS/fiber
 ```
 
 ## 🎯 Özəllikləri
@@ -306,7 +306,7 @@ Fiber baxış mühərriki təyin edilmədikdə [html/template-in](https://pkg.go
 package main
 
 import (
-    "github.com/gofiber/fiber/v2"
+    "github.com/Nota-ITS/fiber"
     "github.com/gofiber/template/pug"
 )
 
@@ -373,8 +373,8 @@ package main
 import (
     "log"
 
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/logger"
+    "github.com/Nota-ITS/fiber"
+    "github.com/Nota-ITS/fiber/middleware/logger"
 )
 
 func main() {
@@ -396,8 +396,8 @@ func main() {
 import (
     "log"
 
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/cors"
+    "github.com/Nota-ITS/fiber"
+    "github.com/Nota-ITS/fiber/middleware/cors"
 )
 
 func main() {
@@ -481,8 +481,8 @@ func main() {
 
 ```go
 import (
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/websocket"
+    "github.com/Nota-ITS/fiber"
+    "github.com/Nota-ITS/fiber/middleware/websocket"
 )
 
 func main() {
@@ -515,7 +515,7 @@ func main() {
 
 ```go
 import (
-    "github.com/gofiber/fiber/v2"
+    "github.com/Nota-ITS/fiber"
     "github.com/valyala/fasthttp"
 )
 
@@ -556,8 +556,8 @@ func main() {
 
 ```go
 import (
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/recover"
+    "github.com/Nota-ITS/fiber"
+    "github.com/Nota-ITS/fiber/middleware/recover"
 )
 
 func main() {
@@ -581,8 +581,8 @@ func main() {
 
 ```go
 import (
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/recover"
+    "github.com/Nota-ITS/fiber"
+    "github.com/Nota-ITS/fiber/middleware/recover"
 )
 
 func main() {

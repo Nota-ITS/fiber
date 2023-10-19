@@ -3,7 +3,6 @@ module github.com/Nota-ITS/fiber
 go 1.18
 
 require (
-	github.com/gofiber/fiber/v2 v2.50.0
 	github.com/google/uuid v1.3.1
 	github.com/mattn/go-colorable v0.1.13
 	github.com/mattn/go-isatty v0.0.20

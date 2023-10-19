@@ -17,7 +17,7 @@ First of all, [download](https://go.dev/dl/) and install Go. `1.17` or higher is
 Installation is done using the [`go get`](https://pkg.go.dev/cmd/go/#hdr-Add_dependencies_to_current_module_and_install_them) command:
 
 ```bash
-go get github.com/gofiber/fiber/v2
+go get github.com/Nota-ITS/fiber
 ```
 
 ### Zero Allocation
@@ -79,7 +79,7 @@ Embedded below is essentially the most straightforward **Fiber** app you can cre
 ```go
 package main
 
-import "github.com/gofiber/fiber/v2"
+import "github.com/Nota-ITS/fiber"
 
 func main() {
 	app := fiber.New()

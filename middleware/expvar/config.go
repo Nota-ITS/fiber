@@ -1,7 +1,7 @@
 package expvar
 
 import (
-	"github.com/gofiber/fiber/v2"
+	"github.com/Nota-ITS/fiber"
 )
 
 // Config defines the config for middleware.

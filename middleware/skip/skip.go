@@ -1,7 +1,7 @@
 package skip
 
 import (
-	"github.com/gofiber/fiber/v2"
+	"github.com/Nota-ITS/fiber"
 )
 
 // New creates a middleware handler which skips the wrapped handler

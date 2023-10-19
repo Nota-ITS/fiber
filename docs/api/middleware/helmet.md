@@ -16,8 +16,8 @@ func New(config ...Config) fiber.Handler
 package main
 
 import (
-  "github.com/gofiber/fiber/v2"
-  "github.com/gofiber/fiber/v2/middleware/helmet"
+  "github.com/Nota-ITS/fiber"
+  "github.com/Nota-ITS/fiber/middleware/helmet"
 )
 
 func main() {

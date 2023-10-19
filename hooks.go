@@ -1,7 +1,7 @@
 package fiber
 
 import (
-	"github.com/gofiber/fiber/v2/log"
+	"github.com/Nota-ITS/fiber/log"
 )
 
 // OnRouteHandler Handlers define a function to create hooks for Fiber.
