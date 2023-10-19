@@ -3,7 +3,7 @@ id: idempotency
 title: Idempotency
 ---
 
-Idempotency middleware for [Fiber](https://github.com/gofiber/fiber) allows for fault-tolerant APIs where duplicate requests — for example due to networking issues on the client-side — do not erroneously cause the same action performed multiple times on the server-side.
+Idempotency middleware for [Fiber](https://github.com/Nota-ITS/fiber) allows for fault-tolerant APIs where duplicate requests — for example due to networking issues on the client-side — do not erroneously cause the same action performed multiple times on the server-side.
 
 Refer to https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-idempotency-key-header-02 for a better understanding.
 

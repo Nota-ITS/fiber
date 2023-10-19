@@ -3,7 +3,7 @@ id: proxy
 title: Proxy
 ---
 
-Proxy middleware for [Fiber](https://github.com/gofiber/fiber) that allows you to proxy requests to multiple servers.
+Proxy middleware for [Fiber](https://github.com/Nota-ITS/fiber) that allows you to proxy requests to multiple servers.
 
 ## Signatures
 

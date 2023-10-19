@@ -3,7 +3,7 @@ id: logger
 title: Logger
 ---
 
-Logger middleware for [Fiber](https://github.com/gofiber/fiber) that logs HTTP request/response details.
+Logger middleware for [Fiber](https://github.com/Nota-ITS/fiber) that logs HTTP request/response details.
 
 ## Signatures
 ```go

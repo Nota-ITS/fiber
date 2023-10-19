@@ -1,5 +1,5 @@
 // ⚡️ Fiber is an Express inspired web framework written in Go with ☕️
-// 🤖 Github Repository: https://github.com/gofiber/fiber
+// 🤖 Github Repository: https://github.com/Nota-ITS/fiber
 // 📌 API Documentation: https://docs.gofiber.io
 
 package utils
@@ -16,9 +16,9 @@ func Test_ToUpper(t *testing.T) {
 }
 
 const (
-	largeStr = "/RePos/GoFiBer/FibEr/iSsues/187643/CoMmEnts/RePos/GoFiBer/FibEr/iSsues/CoMmEnts"
-	upperStr = "/REPOS/GOFIBER/FIBER/ISSUES/187643/COMMENTS/REPOS/GOFIBER/FIBER/ISSUES/COMMENTS"
-	lowerStr = "/repos/gofiber/fiber/issues/187643/comments/repos/gofiber/fiber/issues/comments"
+	largeStr = "/RePos/Nota-ITS/fiber/iSsues/187643/CoMmEnts/RePos/Nota-ITS/fiber/iSsues/CoMmEnts"
+	upperStr = "/REPOS/Nota-ITS/fiber/ISSUES/187643/COMMENTS/REPOS/Nota-ITS/fiber/ISSUES/COMMENTS"
+	lowerStr = "/repos/Nota-ITS/fiber/issues/187643/comments/repos/Nota-ITS/fiber/issues/comments"
 )
 
 func Benchmark_ToUpper(b *testing.B) {

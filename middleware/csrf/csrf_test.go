@@ -352,7 +352,7 @@ func Test_CSRF_ErrorHandler_EmptyToken(t *testing.T) {
 	utils.AssertEqual(t, "empty CSRF token", string(ctx.Response.Body()))
 }
 
-// TODO: use this test case and make the unsafe header value bug from https://github.com/gofiber/fiber/issues/2045 reproducible and permanently fixed/tested by this testcase
+// TODO: use this test case and make the unsafe header value bug from https://github.com/Nota-ITS/fiber/issues/2045 reproducible and permanently fixed/tested by this testcase
 // func Test_CSRF_UnsafeHeaderValue(t *testing.T) {
 //  t.Parallel()
 // 	app := fiber.New()

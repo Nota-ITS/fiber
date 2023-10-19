@@ -3,7 +3,7 @@ id: envvar
 title: EnvVar
 ---
 
-EnvVar middleware for [Fiber](https://github.com/gofiber/fiber) that can be used to expose environment variables with various options.
+EnvVar middleware for [Fiber](https://github.com/Nota-ITS/fiber) that can be used to expose environment variables with various options.
 
 ## Signatures
 

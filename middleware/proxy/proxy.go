@@ -195,7 +195,7 @@ func doAction(
 	copiedURL := utils.CopyString(addr)
 	req.SetRequestURI(copiedURL)
 	// NOTE: if req.isTLS is true, SetRequestURI keeps the scheme as https.
-	// Reference: https://github.com/gofiber/fiber/issues/1762
+	// Reference: https://github.com/Nota-ITS/fiber/issues/1762
 	if scheme := getScheme(utils.UnsafeBytes(copiedURL)); len(scheme) > 0 {
 		req.URI().SetSchemeBytes(scheme)
 	}

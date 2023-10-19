@@ -3,7 +3,7 @@ id: session
 title: Session
 ---
 
-Session middleware for [Fiber](https://github.com/gofiber/fiber).
+Session middleware for [Fiber](https://github.com/Nota-ITS/fiber).
 
 :::note
 This middleware uses our [Storage](https://github.com/gofiber/storage) package to support various databases through a single interface. The default configuration for this middleware saves data to memory, see the examples below for other databases.

@@ -3,7 +3,7 @@ id: filesystem
 title: FileSystem
 ---
 
-Filesystem middleware for [Fiber](https://github.com/gofiber/fiber) that enables you to serve files from a directory.
+Filesystem middleware for [Fiber](https://github.com/Nota-ITS/fiber) that enables you to serve files from a directory.
 
 :::caution
 **`:params` & `:optionals?` within the prefix path are not supported!**

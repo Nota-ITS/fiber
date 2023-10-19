@@ -1,5 +1,5 @@
 // ⚡️ Fiber is an Express inspired web framework written in Go with ☕️
-// 📃 Github Repository: https://github.com/gofiber/fiber
+// 📃 Github Repository: https://github.com/Nota-ITS/fiber
 // 📌 API Documentation: https://docs.gofiber.io
 
 //nolint:bodyclose // Much easier to just ignore memory leaks in tests

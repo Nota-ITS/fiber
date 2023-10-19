@@ -3,7 +3,7 @@ id: encryptcookie
 title: Encrypt Cookie
 ---
 
-Encrypt middleware for [Fiber](https://github.com/gofiber/fiber) which encrypts cookie values. Note: this middleware does not encrypt cookie names.
+Encrypt middleware for [Fiber](https://github.com/Nota-ITS/fiber) which encrypts cookie values. Note: this middleware does not encrypt cookie names.
 
 ## Signatures
 

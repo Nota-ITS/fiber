@@ -3,7 +3,7 @@ id: skip
 title: Skip
 ---
 
-Skip middleware for [Fiber](https://github.com/gofiber/fiber) that skips a wrapped handler if a predicate is true.
+Skip middleware for [Fiber](https://github.com/Nota-ITS/fiber) that skips a wrapped handler if a predicate is true.
 
 ## Signatures
 ```go

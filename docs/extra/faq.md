@@ -166,4 +166,4 @@ func main() {
 	log.Fatal(app.Listen(":3000"))
 }
 ```
-If more information is needed, please refer to this issue [#750](https://github.com/gofiber/fiber/issues/750)
+If more information is needed, please refer to this issue [#750](https://github.com/Nota-ITS/fiber/issues/750)

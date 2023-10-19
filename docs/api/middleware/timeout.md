@@ -3,7 +3,7 @@ id: timeout
 title: Timeout
 ---
 
-There exist two distinct implementations of timeout middleware [Fiber](https://github.com/gofiber/fiber).
+There exist two distinct implementations of timeout middleware [Fiber](https://github.com/Nota-ITS/fiber).
 
 **New**
 

@@ -3,7 +3,7 @@ id: expvar
 title: ExpVar
 ---
 
-Expvar middleware for [Fiber](https://github.com/gofiber/fiber) that serves via its HTTP server runtime exposed variants in the JSON format. The package is typically only imported for the side effect of registering its HTTP handlers. The handled path is `/debug/vars`.
+Expvar middleware for [Fiber](https://github.com/Nota-ITS/fiber) that serves via its HTTP server runtime exposed variants in the JSON format. The package is typically only imported for the side effect of registering its HTTP handlers. The handled path is `/debug/vars`.
 
 ## Signatures
 

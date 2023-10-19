@@ -3,7 +3,7 @@ id: etag
 title: ETag
 ---
 
-ETag middleware for [Fiber](https://github.com/gofiber/fiber) that lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content has not changed.
+ETag middleware for [Fiber](https://github.com/Nota-ITS/fiber) that lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content has not changed.
 
 ## Signatures
 

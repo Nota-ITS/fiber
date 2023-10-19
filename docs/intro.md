@@ -51,7 +51,7 @@ func handler(c *fiber.Ctx) error {
 }
 ```
 
-We created a custom `CopyString` function that does the above and is available under [gofiber/utils](https://github.com/gofiber/fiber/tree/master/utils).
+We created a custom `CopyString` function that does the above and is available under [gofiber/utils](https://github.com/Nota-ITS/fiber/tree/master/utils).
 
 ```go
 app.Get("/:foo", func(c *fiber.Ctx) error {
@@ -70,7 +70,7 @@ app := fiber.New(fiber.Config{
 })
 ```
 
-For more information, please check [**\#426**](https://github.com/gofiber/fiber/issues/426) and [**\#185**](https://github.com/gofiber/fiber/issues/185).
+For more information, please check [**\#426**](https://github.com/Nota-ITS/fiber/issues/426) and [**\#185**](https://github.com/Nota-ITS/fiber/issues/185).
 
 ### Hello, World!
 

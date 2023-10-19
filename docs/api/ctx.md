@@ -1499,7 +1499,7 @@ app.Get("/old", func(c *fiber.Ctx) error {
 
 ## Route
 
-Returns the matched [Route](https://pkg.go.dev/github.com/gofiber/fiber?tab=doc#Route) struct.
+Returns the matched [Route](https://pkg.go.dev/github.com/Nota-ITS/fiber?tab=doc#Route) struct.
 
 ```go title="Signature"
 func (c *Ctx) Route() *Route
@@ -1685,7 +1685,7 @@ app.Get("/file-with-url-chars", func(c *fiber.Ctx) error {
 Sets the status code and the correct status message in the body, if the response body is **empty**.
 
 :::tip
-You can find all used status codes and messages [here](https://github.com/gofiber/fiber/blob/dffab20bcdf4f3597d2c74633a7705a517d2c8c2/utils.go#L183-L244).
+You can find all used status codes and messages [here](https://github.com/Nota-ITS/fiber/blob/dffab20bcdf4f3597d2c74633a7705a517d2c8c2/utils.go#L183-L244).
 :::
 
 ```go title="Signature"

@@ -433,7 +433,7 @@ func Test_Session_Cookie_In_Response(t *testing.T) {
 }
 
 // go test -run Test_Session_Deletes_Single_Key
-// Regression: https://github.com/gofiber/fiber/issues/1365
+// Regression: https://github.com/Nota-ITS/fiber/issues/1365
 func Test_Session_Deletes_Single_Key(t *testing.T) {
 	t.Parallel()
 	store := New()
@@ -461,7 +461,7 @@ func Test_Session_Deletes_Single_Key(t *testing.T) {
 }
 
 // go test -run Test_Session_Regenerate
-// Regression: https://github.com/gofiber/fiber/issues/1395
+// Regression: https://github.com/Nota-ITS/fiber/issues/1395
 func Test_Session_Regenerate(t *testing.T) {
 	t.Parallel()
 	// fiber instance
